@@ -76,3 +76,12 @@ class TestDemo2:
     @pytest.mark.skip
     def test_case333(self):
         print('测试用例1')
+
+
+if __name__ == '__main__':
+    # 运行当前目录下所有符合规则的用例，包括子目录（test_*.py或 *_test.py)
+    pytest.main()
+    # 运行模块中的某一条用例
+    pytest.main(['TestDemo2::test_case333','-vs'])
+    # 运行模块中某个标签
+    pytest.main(['-vs', '-m','dd'])

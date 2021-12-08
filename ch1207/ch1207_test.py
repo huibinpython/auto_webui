@@ -10,7 +10,7 @@ def inc(x):
 
 def test_answer():
     print('fawefawe')
-    assert inc(3) == 5
+    assert inc(3) == 4
 
 # 执行文件里某一个类：pytest ch1207_test.py::TestDemo
 # 执行文件里类的某一个方法：pytest ch1207_test.py::TestDemo::test_demo2 -v
